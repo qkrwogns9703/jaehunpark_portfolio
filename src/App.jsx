@@ -1,20 +1,22 @@
 import './App.css';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
-import NavContainer from '../container/nav/NavContainer';
-import AboutContainer from '../container/about/AboutContainer';
+import Nav from './components/Nav';
+import About from './pages/About';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
 const App = props => {
 	return (
 		<BrowserRouter>
-			<NavContainer />
+			<Nav />
 			<Switch>
 				<Route exact path='/'>
-					<AboutContainer />
+					<Home />
 				</Route>
 				<Route path='/about'>
-					<AboutContainer />
+					<About />
 				</Route>
 				<Route path='/projects'>
-					<AboutContainer />
+					<Projects />
 				</Route>
 				<Redirect from='*' to='/' />
 			</Switch>
