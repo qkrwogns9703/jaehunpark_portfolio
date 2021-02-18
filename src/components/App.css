@@ -23,7 +23,7 @@ html {
 }
 
 body {
-	font-family: 'Noto Serif KR', serif;
+	font-family: 'Nanum Gothic', sans-serif;
 	/* 'Nanum Pen Script', cursive; */
 	background-color: #fafafa;
 	font-weight: 400;
@@ -51,4 +51,12 @@ button:focus {
 a {
 	color: black;
 	text-decoration: none;
+}
+
+.active li {
+	border-bottom: 1px solid white;
+}
+
+.active span {
+	border-bottom: 2px solid #3faffe;
 }

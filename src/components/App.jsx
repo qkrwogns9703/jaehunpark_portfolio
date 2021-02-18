@@ -7,7 +7,13 @@ const App = props => {
 		<BrowserRouter>
 			<NavContainer />
 			<Switch>
-				<Route path='/'>
+				<Route exact path='/'>
+					<AboutContainer />
+				</Route>
+				<Route path='/about'>
+					<AboutContainer />
+				</Route>
+				<Route path='/projects'>
 					<AboutContainer />
 				</Route>
 				<Redirect from='*' to='/' />
