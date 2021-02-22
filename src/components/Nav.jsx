@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const NavContainer = styled.div`
 	display: flex;
@@ -23,29 +23,40 @@ const MenuItem = styled.li`
 	color: #fff;
 	margin: 0 3rem;
 	font-weight: 200;
+	cursor: pointer;
+	&:hover {
+		border-bottom: 1px solid #fff;
+	}
 `;
 
 const Park = styled.span`
 	font-size: 3rem;
-	color: #3faffe;
+	color: var(--color-blue);
 	margin-right: 2rem;
 	font-weight: 500;
+	cursor: pointer;
+	&:hover {
+		border-bottom: 2px solid var(--color-blue);
+	}
 `;
 
 const Nav = props => {
 	return (
 		<NavContainer>
 			<MenuList>
-				<NavLink to='/about'>
+				<Link to='about'>
 					<MenuItem>ABOUT.</MenuItem>
-				</NavLink>
-				<NavLink to='/projects'>
-					<MenuItem>PROJECTS.</MenuItem>
-				</NavLink>
+				</Link>
+				<Link to='skills'>
+					<MenuItem>SKILLS.</MenuItem>
+				</Link>
+				<Link to='projects'>
+					<MenuItem>PROJECT.</MenuItem>
+				</Link>
 			</MenuList>
-			<NavLink exact to='/'>
-				<Park>PARK.</Park>
-			</NavLink>
+			<Link to='main' activeClass='active'>
+				<Park>&lt;PARK/&gt;</Park>
+			</Link>
 		</NavContainer>
 	);
 };

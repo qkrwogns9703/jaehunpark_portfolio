@@ -1,14 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const AboutContainer = styled.div`
-	height: 100vh;
+const SkillsContainer = styled.div`
+	height: 120vh;
 	padding-top: 3rem;
 	background-color: #121212;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	padding: 5rem;
 `;
 
 const Title = styled.span`
@@ -35,24 +34,35 @@ const TextLine = styled.div`
 	align-items: center;
 `;
 
-const AboutContent = styled.div`
-	height: 70vh;
-	width: 80%;
+const SkillsContent = styled.div`
 	border: 1px solid white;
 	display: flex;
 	justify-content: center;
+	width: 100%;
+	height: 100vh;
 `;
 
-const About = props => {
+const FrontendArea = styled.div`
+	display: flex;
+`;
+
+const StackImages = styled.img`
+	width: 3em;
+	height: 3em;
+`;
+
+const Skills = props => {
 	return (
-		<AboutContainer id='about'>
+		<SkillsContainer id='skills'>
 			<TextLine>
-				<Title>ABOUT</Title>
+				<Title>SKILLS</Title>
 				<LineSpan></LineSpan>
 			</TextLine>
-			<AboutContent></AboutContent>
-		</AboutContainer>
+			<SkillsContent>
+				<StackImages src='https://img.icons8.com/color/96/000000/typescript.png' />
+			</SkillsContent>
+		</SkillsContainer>
 	);
 };
 
-export default About;
+export default Skills;
