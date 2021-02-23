@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const AboutContainer = styled.div`
 	height: 100vh;
 	padding-top: 3rem;
-	background-color: #121212;
+	background-color: #000;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -21,7 +21,7 @@ const LineSpan = styled.span`
 	display: inline-block;
 	position: relative;
 	opacity: 0.8;
-	transform: rotate(-1deg);
+	transform: rotate(-2deg);
 	z-index: 0;
 	border-bottom: 10px solid var(--color-blue);
 	opacity: 0.6;

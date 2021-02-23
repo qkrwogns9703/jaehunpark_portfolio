@@ -32,30 +32,54 @@ const MenuItem = styled.li`
 const Park = styled.span`
 	font-size: 3rem;
 	color: var(--color-blue);
-	margin-right: 2rem;
+	margin-right: 3rem;
 	font-weight: 500;
 	cursor: pointer;
-	&:hover {
-		border-bottom: 2px solid var(--color-blue);
-	}
+`;
+
+const LineSpan = styled.span`
+	width: 11rem;
+	display: inline-block;
+	position: relative;
+	transform: rotate(-2deg);
+	z-index: 0;
+	border-bottom: 3px solid #fff;
+	right: 1.5rem;
+	bottom: 2rem;
+`;
+
+const TextLine = styled.div`
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
 `;
 
 const Nav = props => {
 	return (
 		<NavContainer>
 			<MenuList>
-				<Link to='about'>
-					<MenuItem>ABOUT.</MenuItem>
+				<Link to='about' activeClass='active' spy={true}>
+					<MenuItem>
+						ABOUT<span>.</span>
+					</MenuItem>
 				</Link>
-				<Link to='skills'>
-					<MenuItem>SKILLS.</MenuItem>
+				<Link to='skills' activeClass='active' spy={true}>
+					<MenuItem>
+						SKILLS<span>.</span>
+					</MenuItem>
 				</Link>
-				<Link to='projects'>
-					<MenuItem>PROJECT.</MenuItem>
+				<Link to='projects' activeClass='active' spy={true}>
+					<MenuItem>
+						PROJECTS<span>.</span>
+					</MenuItem>
 				</Link>
 			</MenuList>
-			<Link to='main' activeClass='active'>
-				<Park>&lt;PARK/&gt;</Park>
+			<Link to='main' activeClass='active' spy={true}>
+				<TextLine>
+					<Park>PARK.</Park>
+					<LineSpan></LineSpan>
+				</TextLine>
 			</Link>
 		</NavContainer>
 	);

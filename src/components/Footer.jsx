@@ -17,6 +17,9 @@ const Icon = styled.i`
 	font-size: 2.5rem;
 	margin-left: 2rem;
 	cursor: pointer;
+	&:hover {
+		opacity: 0.6;
+	}
 `;
 
 const TistoryContainer = styled.span`
@@ -29,6 +32,9 @@ const TistoryContainer = styled.span`
 	align-items: center;
 	margin-left: 2rem;
 	cursor: pointer;
+	&:hover {
+		opacity: 0.6;
+	}
 `;
 
 const TIstoryIcon = styled.img`
@@ -54,9 +60,6 @@ const Footer = props => {
 			<TistoryContainer onClick={tistoryLink}>
 				<TIstoryIcon src={tistory} alt='티스토리로고' />
 			</TistoryContainer>
-			<a href='mailto:jaehunb350@gmail.com' title='jaehunb350@gmail.com'>
-				<Icon className='far fa-file-pdf' />
-			</a>
 		</SideMenuContainer>
 	);
 };

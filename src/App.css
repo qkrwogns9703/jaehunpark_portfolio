@@ -32,7 +32,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-size: 2rem;
-
+	overflow-x: hidden;
 	min-height: 100vh;
 }
 
@@ -52,4 +52,13 @@ button:focus {
 a {
 	color: black;
 	text-decoration: none;
+}
+
+#delete-cursor > div > .Typewriter__cursor {
+	display: none;
+}
+
+.active > li {
+	color: var(--color-blue);
+	border-bottom: 1px solid #fff;
 }
