@@ -54,6 +54,11 @@ a {
 	text-decoration: none;
 }
 
+.active > li {
+	color: var(--color-blue);
+	border-bottom: 1px solid #fff;
+}
+
 .Typewriter__cursor {
 	color: var(--color-blue);
 }
