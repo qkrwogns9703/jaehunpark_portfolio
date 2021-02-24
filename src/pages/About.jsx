@@ -124,7 +124,7 @@ const About = props => {
 				<LineSpan></LineSpan>
 			</TextLine>
 			<Subject>
-				<Quotes>"</Quotes>개발 하는 것에 즐거움과 보람을 느낍니다
+				<Quotes>"</Quotes>개발하는 것에 즐거움과 보람을 느낍니다
 				<Quotes>"</Quotes>
 			</Subject>
 			<AboutContent>

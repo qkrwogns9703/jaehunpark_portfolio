@@ -24,6 +24,7 @@ const Modal = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 `;
 
 const ModalContent = styled.div`
@@ -82,11 +83,13 @@ const LineSpan = styled.span`
 
 const CloseButton = styled.div`
 	color: var(--color-blue);
-	position: fixed;
-	right: 3rem;
 	font-size: 3rem;
-	top: 2rem;
 	cursor: pointer;
+`;
+const ButtonArea = styled.div`
+	display: flex;
+	width: 68rem;
+	justify-content: flex-end;
 `;
 
 const BitdaMainImg = styled.img`
@@ -162,6 +165,9 @@ const Bitda = ({ close }) => {
 
 	return (
 		<Modal onClick={close}>
+			<ButtonArea>
+				<CloseButton onClick={close}>&times;</CloseButton>
+			</ButtonArea>
 			<ModalContent
 				onClick={e => {
 					e.stopPropagation();
@@ -171,7 +177,6 @@ const Bitda = ({ close }) => {
 						<Title>취향을 빚다</Title>
 						<LineSpan></LineSpan>
 					</TextLine>
-					<CloseButton onClick={close}>&times;</CloseButton>
 				</BitdaTitleArea>
 				<BitdaMainImg src={bitdaMain} />
 				<LinkArea>

@@ -24,6 +24,7 @@ const Modal = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column;
 `;
 
 const ModalContent = styled.div`
@@ -82,11 +83,13 @@ const LineSpan = styled.span`
 
 const CloseButton = styled.div`
 	color: var(--color-blue);
-	position: fixed;
-	right: 3rem;
 	font-size: 3rem;
-	top: 2rem;
 	cursor: pointer;
+`;
+const ButtonArea = styled.div`
+	display: flex;
+	width: 68rem;
+	justify-content: flex-end;
 `;
 
 const GoldenTimeImage = styled.img`
@@ -158,6 +161,9 @@ const GoldenTime = ({ close }) => {
 
 	return (
 		<Modal onClick={close}>
+			<ButtonArea>
+				<CloseButton onClick={close}>&times;</CloseButton>
+			</ButtonArea>
 			<ModalContent
 				onClick={e => {
 					e.stopPropagation();
@@ -167,7 +173,6 @@ const GoldenTime = ({ close }) => {
 						<Title>GoldenTime</Title>
 						<LineSpan></LineSpan>
 					</TextLine>
-					<CloseButton onClick={close}>&times;</CloseButton>
 				</TitleArea>
 				<GoldenTimeImage src={goldenTimeMain} />
 				<LinkArea>
