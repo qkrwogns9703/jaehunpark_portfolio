@@ -23,7 +23,7 @@ const MenuItem = styled.li`
 	font-size: 2rem;
 	color: #fff;
 	margin: 0 3rem;
-	font-weight: 200;
+	font-weight: 100;
 	cursor: pointer;
 	&:hover {
 		border-bottom: 1px solid #fff;
@@ -38,17 +38,6 @@ const Park = styled.span`
 	cursor: pointer;
 `;
 
-const LineSpan = styled.span`
-	width: 11rem;
-	display: inline-block;
-	position: relative;
-	transform: rotate(-2deg);
-	z-index: 0;
-	border-bottom: 3px solid #fff;
-	right: 1.5rem;
-	bottom: 2rem;
-`;
-
 const TextLine = styled.div`
 	display: flex;
 	flex-direction: column;
@@ -61,25 +50,18 @@ const Nav = props => {
 		<NavContainer>
 			<MenuList>
 				<Link to='about' activeClass='active' spy={true}>
-					<MenuItem>
-						ABOUT<span>.</span>
-					</MenuItem>
+					<MenuItem>ABOUT.</MenuItem>
 				</Link>
 				<Link to='skills' activeClass='active' spy={true}>
-					<MenuItem>
-						SKILLS<span>.</span>
-					</MenuItem>
+					<MenuItem>SKILLS.</MenuItem>
 				</Link>
 				<Link to='projects' activeClass='active' spy={true}>
-					<MenuItem>
-						PROJECTS<span>.</span>
-					</MenuItem>
+					<MenuItem>PROJECTS.</MenuItem>
 				</Link>
 			</MenuList>
 			<Link to='main' activeClass='active' spy={true}>
 				<TextLine>
 					<Park>PARK.</Park>
-					<LineSpan></LineSpan>
 				</TextLine>
 			</Link>
 		</NavContainer>

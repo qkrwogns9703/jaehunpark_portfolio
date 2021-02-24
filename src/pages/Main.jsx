@@ -23,7 +23,7 @@ const FirstContent = styled.div`
 
 const TypeingArea = styled.div`
 	color: white;
-	font-size: 5rem;
+	font-size: 4.3rem;
 	text-align: center;
 	height: 10rem;
 	position: relative;
