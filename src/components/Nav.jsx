@@ -10,6 +10,7 @@ const NavContainer = styled.div`
 	height: 6rem;
 	justify-content: center;
 	z-index: 100;
+	background: rgba(0, 0, 0, 0.5);
 `;
 
 const MenuList = styled.ul`

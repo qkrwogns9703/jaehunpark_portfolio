@@ -25,31 +25,24 @@ const TypeingArea = styled.div`
 	color: white;
 	font-size: 5rem;
 	text-align: center;
+	height: 10rem;
+	position: relative;
+	bottom: 3rem;
 `;
 
 const Main = props => (
 	<MainContainer id='main'>
 		<FirstContent>
 			<TypeingArea>
-				<div id='delete-cursor'>
-					<Typewriter
-						options={{
-							strings: [`성장을 멈추지 않는`],
-							autoStart: true,
-							loop: true,
-							delay: '100',
-							pauseFor: 500000,
-						}}
-					/>
-				</div>
-
 				<Typewriter
 					options={{
-						strings: [`프론트엔드 엔지니어 박재훈입니다.`],
+						strings: [
+							`성장을 멈추지 않는 <br/> 프론트엔드 엔지니어 박재훈입니다.`,
+						],
 						autoStart: true,
 						loop: true,
 						delay: '100',
-						pauseFor: 500000,
+						pauseFor: 5000000,
 					}}
 				/>
 			</TypeingArea>

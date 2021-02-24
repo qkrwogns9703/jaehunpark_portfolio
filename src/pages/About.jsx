@@ -33,11 +33,12 @@ const TextLine = styled.div`
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
+	margin-top: 2rem;
 `;
 
 const AboutContent = styled.div`
 	height: 70vh;
-	width: 70%;
+	width: 60%;
 	margin-top: 3rem;
 	display: flex;
 	flex-direction: column;

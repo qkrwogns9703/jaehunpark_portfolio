@@ -54,11 +54,6 @@ a {
 	text-decoration: none;
 }
 
-#delete-cursor > div > .Typewriter__cursor {
-	display: none;
-}
-
-.active > li {
+.Typewriter__cursor {
 	color: var(--color-blue);
-	border-bottom: 1px solid #fff;
 }
