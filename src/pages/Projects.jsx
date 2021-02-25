@@ -159,7 +159,7 @@ const Projects = props => {
 				<LineSpan></LineSpan>
 			</TextLine>
 			<Subject>
-				<Quotes>"</Quotes>진행한 프로젝트 안내입니다<Quotes>"</Quotes>
+				<Quotes>"</Quotes>진행한 프로젝트 소개입니다<Quotes>"</Quotes>
 			</Subject>
 			<ProjectContent className='up-on-scroll1'>
 				<BitdaArea>
