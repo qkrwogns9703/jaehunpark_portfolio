@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import backGround from '../images/main.jpg';
 import Typewriter from 'typewriter-effect';
-import arrowDown from '../images/arrow-down.png';
 const MainContainer = styled.div`
 	display: flex;
 	flex-direction: column;
